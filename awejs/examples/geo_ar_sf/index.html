@@ -20,11 +20,17 @@
 </style>
 </head>
 <body>
+<<<<<<< HEAD
+=======
 <div>
 <label id="latitude"></label>
 <label id="longitude"></label>
 </div>
+>>>>>>> branch 'master' of https://github.com/StefanF25/augmented_webapp.git
 <div id="container"></div>
+<div id="myModal" style="margin: 0 0 auto 0; padding: 10px; backgroundcolor: white; width: auto; height: auto; position: fixed;">
+<p id="modalContent"></p>
+</div>
 <script type="text/javascript" src="../../js/awe-loader-min.js"></script>
 <script type="text/javascript">
   window.addEventListener('load', function() {
@@ -87,8 +93,6 @@
               		longitude = position.coords.longitude;
               	}
               );
-              document.getElementById('latitude').innerHTML = latitude;
-              document.getElementById('longitude').innerHTML = longitude;
 
               // setup and paint the scene
 			        window.awe.setup_scene();
