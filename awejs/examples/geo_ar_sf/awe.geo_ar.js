@@ -3,7 +3,6 @@
 	var background_video;
 	var latitude;
 	var longitude;
-<<<<<<< HEAD
 	function getPosition(){
 		navigator.geolocation.getCurrentPosition(
 			function(position){
@@ -14,14 +13,12 @@
 		window.setTimeout("getPositon();", 0);
 	}
 	document.getElementById('modalContent').innerHTML = "latitude: "+latitude+"<br>longitude: "+longitude;
-=======
 	navigator.geolocation.getCurrentPosition(
 		function(position){
 			latitude = position.coords.latitude;
 			longitude = position.coords.longitude;
 		}
 	);
->>>>>>> branch 'master' of https://github.com/StefanF25/augmented_webapp.git
 	window.lat = latitude;
 	window.lon = longitude;
 	function resize_video() {
