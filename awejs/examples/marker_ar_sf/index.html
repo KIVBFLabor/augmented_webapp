@@ -50,8 +50,10 @@
 						],
 						success: function() {
 							awe.setup_scene();
+							// Points Of Interest werden hinzugefügt
 							awe.pois.add({ id:'poi_1', position: { x:0, y:0, z:10000 }, visible: false });
 							awe.pois.add({ id:'poi_2', position: { x:0, y:0, z:10000 }, visible: false });
+							// Projections (Objekte) werden hinzugefügt und den Pois zugeordnet
 							awe.projections.add({
 								id:'projection_1',
 								geometry: { shape: 'cube', x:120, y:120, z:120 },
@@ -79,7 +81,9 @@
 								},
 								handler: function(event) {
 									if (event.detail) {
-										if (event.detail['12']) { // we are mapping marker #12 to this projection
+										// Den Pois und ihren Objekten werden die Marker 12 und 13 zugeordnet
+										// Sobald der Marker sichtbar ist, werden die Objekte eingeblendet (marker visible -> object visible)
+										if (event.detail['12']) {
 											awe.pois.update({
 											data: {
 												visible: true,
