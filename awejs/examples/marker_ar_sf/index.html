@@ -43,10 +43,10 @@
 						capabilities: ['gum','webgl'],
 						files: [
 							[ '../../js/awe-standard-dependencies.js', '../../js/awe-standard.js'],
-							'awe-standard-window_resized.js',
-							'awe-standard-object_clicked.js',
-							'awe-jsartoolkit-dependencies.js',
-							'awe.marker_ar.js',
+							'../../js/awe-standard-window_resized.js',
+							'../../js/awe-standard-object_clicked.js',
+							'lib/awe-jsartoolkit-dependencies.js',
+							'lib/awe.marker_ar.js',
 						],
 						success: function() {
 							awe.setup_scene();
@@ -132,11 +132,11 @@
 							window.addEventListener('object_clicked', function(e) {
 								switch (e.detail.projection_id) {
 									case 'projection_1':
-										window.open('http://www.google.de', '_blank');
+										window.open('questions/question2.html', '_blank');
 										menu_open = !menu_open;
 										break;
 									case 'projection_2':
-										window.open('http://www.kivbf.de', '_blank');
+										window.open('questions/question1.html', '_blank');
 										menu_open = !menu_open;
 										break;
 									default: break;
