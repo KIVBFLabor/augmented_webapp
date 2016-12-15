@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AWE Marker AR demo</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+<meta charset="utf-8"/>
+<style type="text/css">
+{
+	margin: 10;
+	padding: 10;
+}
+</style>
+</head>
+<body>
+	<script type="text/javascript" src="script.js"></script>
+	<div style="display: none">
+		<label id="answer1">Raphael</label><br/><!-- dies ist die richtige Antwort -->
+		<label id="answer2">Nicht Stefan</label><br/>
+		<label id="answer3">Klaus</label><br/>
+		<label id="answer4">Schwabi</label><br/>
+	</div>
+	<p class="question">Wie heißt Herr Schwab mit Vornamen?</p>
+	<ul class="answers" id="answers">
+		<input type="radio" value="a" id="answera"><label id="lbla" for="q1a"></label><br/>
+		<input type="radio" value="b" id="answerb"><label id="lblb" for="q1b"></label><br/>
+		<input type="radio" value="c" id="answerc"><label id="lblc" for="q1c"></label><br/>
+		<input type="radio" value="d" id="answerd"><label id="lbld" for="q1d"></label><br/>
+	</ul>
+	
+	<button id="results">
+		Antwort senden
+	</button>
+</body>
+</html>
